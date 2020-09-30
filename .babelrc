@@ -1,0 +1,17 @@
+{
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-function-bind",
+    "transform-object-rest-spread",
+    "transform-react-jsx-source",
+    "transform-class-properties"
+  ],
+  "presets": [
+    "react",
+    ["env", {
+      "targets": {
+        "node": "current"
+      }
+    }]
+  ]
+}

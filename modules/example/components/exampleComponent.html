@@ -1,0 +1,24 @@
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+
+<dom-module id="example-component">
+  <template>
+    <div id="example-component-container" style$="{{style}}">Hello from polymer</div>
+  </template>
+  <script>
+   (function() {
+       class ExampleComponent {
+           beforeRegister() {
+               this.is = 'example-component'
+               this.properties = {}
+           }
+
+           ready() {
+             setInterval(() => {
+               $("#example-component-container").toggle()
+             }, 1000)
+           }
+       }
+       Polymer(ExampleComponent)
+   })();
+  </script>
+</dom-module>

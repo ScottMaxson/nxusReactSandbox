@@ -1,0 +1,20 @@
+{
+  "name": "@seabourne/nxus-platform-boilerplate",
+  "main": "index.js",
+  "version": "0.0.0",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iron-form": "~1.1.4",
+    "iron-overlay-behavior": "~1.8.6",
+    "polymer": "~1.11"
+  }
+}

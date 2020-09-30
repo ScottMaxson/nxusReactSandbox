@@ -1,0 +1,54 @@
+{
+  "host": "localhost",
+  "siteName": "Nxus Boilerplate",
+  "mandrill": {
+    "api_key": ""
+  },
+  "ignore": [
+    "**/*.ejs",
+    "**/*.css",
+    ".tmp/**/*"
+  ],
+  "router": {
+    "sessionStoreName": "waterline-session"
+  },
+  "storage": {
+    "defaults": {
+      "migrate": "safe"
+    },
+    "adapters": {
+      "default": "sails-mongo"
+    },
+    "connections": {
+      "default": {
+        "adapter": "default",
+        "url": "mongodb://localhost/nxus-boilerplate"
+      }
+    }
+  },
+  "baseUrl": "localhost:3001",
+  "sendgrid": {
+    "apiUsername": "",
+    "apiPassword": ""
+  },
+  "client_js": {
+    "watchify": true,
+    "webcomponentsURL": "/js-deps/webcomponentsjs/webcomponents-lite.min.js",
+    "babel": {
+      "presets": [
+        "env",
+        "react"
+      ],
+      "plugins": [
+        "transform-decorators-legacy",
+        "transform-function-bind",
+        "transform-object-rest-spread",
+        "transform-react-jsx-source",
+        "transform-class-properties"
+      ]
+    }
+  },
+  "worker_queue": {
+    "redis_url": "redis://localhost:6379"
+  }
+}
